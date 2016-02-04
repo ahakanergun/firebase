@@ -4,6 +4,9 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'firebase',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://ember-firebase-login.firebaseio.com/',
+    torii: { sessionServiceName: 'session' },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
