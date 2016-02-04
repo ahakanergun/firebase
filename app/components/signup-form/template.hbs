@@ -1,0 +1,6 @@
+{{input type='text' class='form-control' value=email placeholder='E-Posta'}}
+{{input type='password' class='form-control' value=password placeholder='Şifre'}}
+
+{{#if isButtonEnable}}
+    <button class='btn btn-default' {{action 'signUp'}} {{fa-icon 'user-plus'}}> Kayıt Ol</button>
+{{/if}}
