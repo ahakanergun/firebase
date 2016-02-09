@@ -8,9 +8,8 @@ export default Ember.Route.extend({
     createPost: function (model) {
       let post = this.store.createRecord('post', {
         title: model.title,
-        text: model.text,
-        author: model.author,
-        createdDate: new Date()
+        body: model.body,
+        date: new Date()
       });
       post.save();
     }
