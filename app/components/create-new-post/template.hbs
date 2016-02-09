@@ -1,13 +1,13 @@
-<h3>Create a New Post</h3>
+<h3>Yeni yazı oluştur</h3>
 
 <form id="NewPost">
     <p>
-      {{input value=newPost.title placeholder="Title"}}
+      {{input value=newPost.title placeholder="Başlık"}}
     </p>
     <p>
-      {{textarea value=newPost.text placeholder="Content" rows="10" cols="140"}}
+      {{textarea value=newPost.body placeholder="Metin" rows="10" cols="140"}}
     </p>
     <p>
-        <button {{action "createPost"}}>Publish</button>
+        <button {{action "createPost" newPost}}>Gönder</button>
     </p>
 </form>
