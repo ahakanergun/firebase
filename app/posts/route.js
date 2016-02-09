@@ -5,7 +5,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    createPost: function (model) {
+    createPost(model) {
       let post = this.store.createRecord('post', {
         title: model.title,
         body: model.body,

@@ -1,10 +1,13 @@
 <article>
     <br>
+
     <h2>{{attrs.post.title}}</h2>
     <p>{{attrs.post.body}}</p>
     <i>
         (Posted on {{attrs.post.date}}
     </i>
-    <br><br><br>
+    <br>
+    {{#link-to 'post' post.id}}continue reading &#8594;{{/link-to}}
+    <br><br>
     <hr>
 </article>

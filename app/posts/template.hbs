@@ -1,7 +1,10 @@
 <p>Blog posts page</p>
-{{#each model as |post|}}
-  {{#blog-post post=post}}{{/blog-post}}
-{{/each}}
-
-{{#create-new-post newPost=model createPost="createPost"}}{{/create-new-post}}
-{{outlet}}
+<div class="col-md-4">
+    {{#each model as |post|}}
+        {{#blog-post post=post}}{{/blog-post}}
+    {{/each}}
+    {{#create-new-post newPost=model createPost="createPost"}}{{/create-new-post}}
+</div>
+<div class="col-md-8">
+    {{outlet}}
+</div>

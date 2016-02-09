@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    createPost: function (model) {
+    createPost(model) {
       this.sendAction('createPost', model);
 
       // Clear each input field

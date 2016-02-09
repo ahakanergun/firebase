@@ -9,7 +9,7 @@ Router.map(function() {
   this.route('sign-up');
   this.route('login');
   this.route('posts');
-  this.route('post', {path: 'post/:id'});
+  this.route('post', {path: 'posts/:id'});
 });
 
 export default Router;
